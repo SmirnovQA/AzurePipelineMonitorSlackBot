@@ -120,9 +120,9 @@ def get_pipeline_name(pipeline_id):
 
 def toggle_pipeline_status(pipeline_id, current_status):
     """Toggle pipeline status based on current state:
-    - Enabled (0) -> Paused (1)
-    - Paused (1) -> Enabled (0)
-    - Disabled (2) -> Enabled (0)"""
+    - Enabled (enabled) -> Paused (paused)
+    - Paused (paused) -> Enabled (enabled)
+    - Disabled (disabled) -> Enabled (enabled)"""
     url = f"https://{AZURE_ORG}.visualstudio.com/{AZURE_PROJECT_ID}/_apis/build/definitions/{pipeline_id}{API_VERSION}"
     
     # Fetch current pipeline definition
