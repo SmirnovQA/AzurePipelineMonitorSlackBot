@@ -1,0 +1,4 @@
+{"C_DEFAULT_FALLBACK": [123, 1234, 12345], "C0000000000": [123, 1234], "G0000000000": [123, 1234]}
+
+#delete this 2 lines for testing and deploy
+#data is INT, C - means privat channel, G - public
